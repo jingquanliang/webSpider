@@ -1,0 +1,166 @@
+<!-- saved from url=(0014)about:internet -->
+
+
+
+
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<!-- 
+Smart developers always View Source. 
+
+This application was built using Adobe Flex, an open source framework
+for building rich Internet applications that get delivered via the
+Flash Player or to desktops via Adobe AIR. 
+
+Learn more about Flex at http://flex.org 
+// -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+
+<!--  BEGIN Browser History required section -->
+<link rel="stylesheet" type="text/css" href="history/history.css" />
+<!--  END Browser History required section -->
+<link rel="shortcut icon" href="resources/images/tuoing_32.ico" type="image/x-icon" />
+<title>TFS供应链与物流管理信息系统</title>
+<script src="AC_OETags2.js" language="javascript"></script>
+<script src="ef.js" language="javascript"></script>
+
+<!--  BEGIN Browser History required section -->
+<script src="history/history.js" language="javascript"></script>
+<!--  END Browser History required section -->
+
+<!--  add by pengwei,BEGIN 蓝牙电子称脚本 ocx.js  -->
+<script src="swf/lms/wms/pack/ocx.js?20131202" language="javascript"></script>
+<!--  END  -->
+
+<style>
+body { margin: 0px; overflow:hidden }
+.apppanelCss {
+	position: absolute;
+	z-index: 1;
+}
+.myFrameCss{
+	position: absolute;
+	z-index: 2;
+}
+</style>
+
+<!-- 监听关闭浏览器事件 -->
+<!-- 
+<script language="javascript">
+	window.onbeforeunload = function(){
+		return "确定离开页面吗？";
+	};
+	
+	
+	window.onunload = function(){
+		removeSession();
+	};
+	
+	var xmlHttpRequest;// XMLHttpRequest 对象
+	function removeSession(){
+		//请求字符串，提交的 URL
+  		var url = "http://47.89.36.24:8088/escm/system/logoutWhenExistBrowser.sc?key=" + new Date();
+  		// 1.创建 XMLHttpRequest 对象
+  		xmlHttpRequest = createXmlHttpRequest();
+  		// 2.设置回调函数 当 XMLHttpRequest
+  		xmlHttpRequest.onreadystatechange = removeSessionCallBack;
+  		// 3.open 用于初始化 XMLHttpRequest 对象
+  		// GET：请求的方法，url：请求的URL，true：表示异步
+  		xmlHttpRequest.open("POST",url,true);
+  		// 4.发送请求,因为参数已经在url拼接，故此处无需再次传递，设置为null即可
+  		xmlHttpRequest.send(null);
+	}
+	
+	// 创建 XmlHttpRequest 对象
+	function createXmlHttpRequest(){
+	  if(window.ActiveXObject){ //如果是IE浏览器
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	  }else if(window.XMLHttpRequest){ // 非IE浏览器
+		return new XMLHttpRequest();
+	  }
+	}
+	
+	// 回调函数
+	function removeSessionCallBack(){
+	  // XMLHttpRequest.readyState 的5种状态
+	  // 0：未初始化。 1：已初始化。2：发送请求。3：开始接收结果。4：接收完毕
+	  // XMLHttpRequest.status 服务器响应状态码
+	  // 200：正常。404：没有找到资源。500：服务器端出错。
+	  if(xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200){
+		 // 获取服务器响应数据
+		 // var result = xmlHttpRequest.responseText;
+		 // do somsing
+	  }
+	}
+</script> 
+-->
+</head>
+
+<body scroll='no'>
+<script language="JavaScript" type="text/javascript">
+<!--
+		AC_FL_RunContent(
+					"src", "AppPanel",
+					"width", "100%",
+					"height", "100%",
+					"align", "middle",
+					"id", "AppPanel",
+					"quality", "high",
+					"bgcolor", "#ffffff",
+					"name", "AppPanel",
+					"allowScriptAccess","sameDomain",
+					"type", "application/x-shockwave-flash",
+					"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+// -->
+function modifyAppPanel(state) {
+	var panel = document.getElementById('AppPanel');
+	if(state=='1'){
+		panel.className = '';
+	}else{
+		panel.className = 'apppanelCss';
+	}
+}
+
+function modifyMyFrame(){
+	var myFrame = document.querySelector('div[id^=myFrame]:last-child')
+	myFrame.className='myFrameCss';
+}
+
+</script>
+<iframe id="myFrame" name="myFrame"
+    frameborder="0"
+    style="position:absolute;background-color:transparent;border:0px;visibility:hidden;">
+</iframe>
+<noscript>
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+			id="AppPanel" width="100%" height="100%"
+			codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="AppPanel.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#ffffff" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="AppPanel.swf" quality="high" bgcolor="#ffffff"
+				width="100%" height="100%" name="AppPanel" align="middle"
+				play="true"
+				loop="false"
+				quality="high"
+				allowScriptAccess="sameDomain"
+				type="application/x-shockwave-flash"
+				pluginspage="http://www.adobe.com/go/getflashplayer" >
+			</embed>
+	</object>
+</noscript>
+
+<!-- added by pengwei,电子称重 ocx.js -->
+<object id="ComSettingActive" classid="clsid:F2AEE9EF-70D6-4b05-BB41-472C5254EFD0"></object>
+<!-- end pengwei -->
+</body>
+</html>
+

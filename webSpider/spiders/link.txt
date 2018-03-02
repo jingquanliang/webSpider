@@ -1,0 +1,15 @@
+/
+https://www.censys.io/about
+https://www.censys.io/
+https://www.censys.io/reports
+https://www.censys.io/api
+https://www.censys.io/data
+https://www.censys.io/login
+#
+/register
+/tos
+https://www.censys.io/resetpassword
+mailto:requests@censys.io
+/about
+/contact
+https://groups.google.com/a/censys.io/forum/#!forumsearch/
